@@ -1,0 +1,36 @@
+.footer {
+  background: var(--footer-gradient);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px;
+  margin-inline: 12px;
+  margin-block-end: 12px;
+  &__text {
+    color: var(--white);
+    padding: 10px;
+    h3 {
+      font-size: .9rem;
+      font-weight: 600;
+      margin: 0 0 5px 0;
+    }
+    span {
+      font-size: 1rem;
+      font-weight: 500;
+    }
+  }
+  &__button {
+    background-color:var(--button-bg);
+    padding: 16px 30px 16px 30px;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-right: 25px;
+    a {
+      text-decoration: none;
+      color:var(--black);
+      white-space: nowrap;
+    }
+  }
+}
+

@@ -1,0 +1,18 @@
+<div class="result">
+  <div class="scroll-container">
+    <div class="scroll-container__list">
+      <a class="card" *ngFor="let artists of artists">
+        <div class="card-img">
+          <img class="artist-img" src="{{ artists.urlImg }}" />
+          <div class="play">
+            <span class="fa fa-solid fa-play"></span>
+          </div>
+        </div>
+        <div class="card-text">
+          <span class="artist-name">{{ artists.name }}</span>
+          <span class="artist-categorie">{{ artists.genre }}</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>

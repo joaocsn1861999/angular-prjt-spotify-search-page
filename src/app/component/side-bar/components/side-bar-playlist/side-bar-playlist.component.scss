@@ -1,0 +1,27 @@
+.explore__option {
+  background-color: var(--components-bg2);
+  color: var(--white);
+  border-radius: 8px;
+  padding: 16px 25px;
+  display: flex;
+  flex-direction: column;
+  margin-block-end: 15px;
+  h2 {
+    font-size: .9rem;
+    font-weight: 600;
+  }
+  p {
+    font-size: .9rem;
+    margin-block: 15px;
+  }
+  a {
+    background-color: var(--white);
+    color: var(--black);
+    align-self: flex-start;
+    font-size: .9rem;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 8px 20px;
+    border-radius: 50px;
+  }
+}

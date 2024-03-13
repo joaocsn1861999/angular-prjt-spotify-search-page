@@ -1,0 +1,47 @@
+<div class="main-container">
+
+  <nav>
+    <div class="navigation">
+      <div class="navigation__search">
+        <section class="navigation__arrows">
+
+          <button
+          class="navigation__arrows--left">
+          <span class="fa-solid fa-chevron-left"></span>
+          </button>
+
+          <button
+          class="navigation__arrows--right">
+          <span class="fa-solid fa-chevron-right"></span>
+          </button>
+        </section>
+
+        <section class="navigation__search-bar">
+          <span class="fa-solid fa-magnifying-glass"></span>
+          <input
+            id="search-input"
+            type="text"
+            maxlength="800"
+            placeholder="O que você quer ouvir?"
+            [(ngModel)]="searchData"
+            (keyup)="this.getResult()"
+          />
+        </section>
+      </div>
+
+      <div class="navigation__login">
+        <button class="navigation__login--subscribe">Inscreva-se</button>
+        <button class="navigation__login--login">Login</button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="playlist">
+    <app-main-content-cards *ngIf="showCards"> </app-main-content-cards>
+    <app-main-content-search-result
+      *ngIf="showQueryResult"
+      [artists]="this.searchResult"
+    >
+    </app-main-content-search-result>
+  </div>
+</div>

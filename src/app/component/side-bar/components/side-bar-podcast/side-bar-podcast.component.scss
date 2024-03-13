@@ -1,0 +1,26 @@
+.explore__option {
+  background-color: #242424;
+  color: #fff;
+  border-radius: 8px;
+  padding: 16px 25px;
+  display: flex;
+  flex-direction: column;
+  h2 {
+    font-size: .9rem;
+    font-weight: 600;
+  }
+  p {
+    font-size: .9rem;
+    margin-block: 15px;
+  }
+  a {
+    background-color: #fff;
+    color: #000;
+    align-self: flex-start;
+    font-size: .9rem;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 8px 20px;
+    border-radius: 50px;
+  }
+}
